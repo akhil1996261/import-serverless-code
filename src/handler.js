@@ -1,7 +1,6 @@
-'use strict';
-
-module.exports.generateRandomNumber = event => {
-  const randomNumber = parseInt(Math.random() * 100);
-  console.log("The random generated integer is: ", randomNumber);
-  return randomNumber;
-};
+import pandas as pandas
+def lambda_handler(event, context):
+    d = {'col1': [1,2], 'col2': [3,4]}
+    df = pd.DataFraame(data=d)
+    print(df)
+    print('Done x1,1')
